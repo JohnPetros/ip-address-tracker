@@ -1,0 +1,12 @@
+{% from "components/info.html" import info %}
+
+<dl
+  class="grid grid-cols-4 w-full max-w-5xl mx-auto shadow-lg rounded-lg p-6 bg-white">
+  {{ info(title="Endereço IP", value=ip_address) }}
+
+  {{ info(title="Localização", value=address) }}
+
+  {{ info(title="Timezone", value=time) }}
+
+  {{ info(title="Provedor de internet", value=isp, has_divisor=False) }}
+</dl>
