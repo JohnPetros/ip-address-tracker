@@ -8,6 +8,8 @@ def init_app():
         __name__, template_folder="../ui/templates", static_folder="../ui/static"
     )
 
+    app.config["SECRET_KEY"] = "PETROS"
+
     init_views(app)
 
     return app
