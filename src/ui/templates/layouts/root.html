@@ -8,12 +8,21 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin />
     <link rel="stylesheet"
       href="{{ url_for('static', filename='styles/global.css') }}">
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>📡</text></svg>" />
     <title>IP Address Tracker</title>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -21,6 +30,9 @@
     class="h-full w-screen overflow-x-hidden">
     {% block body %}
     {% endblock body %}
+
+    <script
+      src="{{ url_for('static', filename='scripts/leaflet.js') }}"></script>
   </body>
 
 </html>
