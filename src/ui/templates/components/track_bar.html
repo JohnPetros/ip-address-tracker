@@ -1,7 +1,7 @@
 {% from "components/info.html" import info %}
 
 <dl
-  class="grid grid-cols-4 w-full max-w-5xl mx-auto shadow-lg rounded-lg p-6 bg-white">
+  class="grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-0 w-full max-w-5xl mx-auto shadow-lg rounded-lg p-6 bg-white">
   {{ info(title="Endereço IP", value=ip_address) }}
 
   {{ info(title="Localização", value=address) }}
