@@ -2,24 +2,36 @@ from requests import get
 from json import loads
 from datetime import datetime
 from pytz import timezone
+from re import search
 
 
 class HomePageController:
-    def execute(self):
+    def execute(self, ip_address: str):
+        try:
+            if not ip_address:
+                ip_address = self.__get_ip_address()
 
-        ip_address = self.__get_ip_address()
+            is_valid_ip_address = self.__validate_ip_address(ip_address)
+            if not is_valid_ip_address:
+                raise Exception("Endereço IP inválido")
 
-        geo_location = self.__get_geo_location(ip_address)
+            print(is_valid_ip_address)
+            geo_location = self.__get_geo_location(ip_address)
 
-        print(ip_address, flush=True)
-        print(geo_location, flush=True)
-
-        return {"ip_address": ip_address, **geo_location}
+            return {"ip_address": ip_address, **geo_location}
+        except Exception as exception:
+            print("EITA")
+            raise exception
 
     def __get_geo_location(self, ip_address: str):
         try:
             response = get(f"http://ip-api.com/json/{ip_address}")
             data = response.json()
+
+            if data["status"] == "fail":
+                raise Exception(
+                    f"Erro ao buscar a geolocalização desse IP: {ip_address}"
+                )
 
             current_timezone = timezone(data["timezone"])
             time = datetime.now(current_timezone).strftime("%H:%M")
@@ -41,6 +53,14 @@ class HomePageController:
             }
         except Exception as exception:
             raise exception
+
+    def __validate_ip_address(self, ip_address):
+        regex_pattern = r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
+
+        if search(regex_pattern, ip_address):
+            return True
+        else:
+            return False
 
     def __get_ip_address(self):
         try:
