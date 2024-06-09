@@ -1,9 +1,15 @@
-<form class="flex w-max rounded-xl focus-within:ring-4 ring-zinc-500">
+<form
+  method="post"
+  class="flex w-max rounded-xl focus-within:ring-4 ring-zinc-500">
   <input
     type="text"
+    name="ip-address"
     placeholder="Procure por qualquer endereço IP ou domínio"
+    required
     class="rounded-l-xl w-96 p-4 bg-zinc-50 placeholder:text-zinc-500 outline-none">
-  <button class="grid place-content-center py-4 px-6 rounded-r-xl bg-zinc-900">
+  <button
+    type="submit"
+    class="grid place-content-center py-4 px-6 rounded-r-xl bg-zinc-900">
     <img
       src="{{ url_for('static', filename='images/icon-arrow.svg') }}"
       alt="Pesquisar">
