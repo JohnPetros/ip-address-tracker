@@ -1,0 +1,31 @@
+{% extends "layouts/root.html" %}
+
+{% block body %}
+
+<main class="w-full -z-50">
+  <div class="pattern z-50">
+    <h1 class="text-zinc-50 text-2xl text-center font-semibold">
+      IP Address Tracker
+    </h1>
+
+    <div class="mt-6 mx-auto w-max">
+      {% include "components/input.html" %}
+    </div>
+  </div>
+
+  <div class="relative z-50 -mt-20 w-max mx-auto">
+    {% include "components/track_bar.html" %}
+  </div>
+
+  <input
+    data-leaflet="data"
+    type="text"
+    value="{{ latitude }}:{{ longitue }}"
+    hidden>
+
+  <div
+    id="map"
+    class="relative w-full h-[64vh] -mt-16 z-10"></div>
+</main>
+
+{% endblock body %}
