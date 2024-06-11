@@ -145,5 +145,5 @@ This application is under MIT licence. See the [licence file](LICENSE) to obtain
 ---
 
 <p align="center">
-  Feito com 💜 por John Petros 👋🏻
+  Made with 💜 by John Petros 👋🏻
 </p>
