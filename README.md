@@ -27,6 +27,8 @@ The deafault IP address to be used is the current public IP address of user's ne
 
 The goal of developing this project was to learn how to create a VPN with [openvp](https://openvpn.net/) and use it to provide some secure features like geolocation changing. Also this project is part of final work in operating system discipline at [FATEC São José dos Santos](https://fatecsjc-prd.azurewebsites.net/).
 
+This project is based on the [IP Address Tracker Challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0) from [Frontend Mentor](https://www.frontendmentor.io/), a free online platform where you can enhance you frontend development skills.
+
 ### ⏹️ Preview
 
 <table align="center">
