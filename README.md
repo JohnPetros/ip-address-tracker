@@ -33,9 +33,9 @@ This project is based on the [IP Address Tracker Challenge](https://www.frontend
 
 <table align="center">
   <tr>
-    <td align="center" width="700">
+    <td align="center">
     <span>Home page<br/></span>
-    <img alt="Home page" src="documentation/images/home-page.png" alt="Demonstração da página principal" />
+    <img src="documentation/images/home-page.png"  width="900" height="600" alt="Demonstração da página principal" />
     </td>
   </tr>  
 </table>
