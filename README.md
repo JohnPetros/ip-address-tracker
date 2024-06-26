@@ -59,19 +59,19 @@ This project is based on the [IP Address Tracker Challenge](https://www.frontend
 
 ## 🛠️ Technologies, tools and external services
 
-Este projeto foi desenvolvido usando as seguintes tecnologias:
+This project was developed using the technologies bellow:
 
-✔️ **[Python](https://www.python.org/)** to program the backend
+✔️ **[Python](https://www.python.org/)** for programming the backend
 
-✔️ **[Flask](https://flask.palletsprojects.com/en/3.0.x/)** to make the web server
+✔️ **[Flask](https://flask.palletsprojects.com/en/3.0.x/)** for making the web server
 
-✔️ **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)** to build the website home page
+✔️ **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)** for building the website home page
 
-✔️ **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)** - to style the home page
+✔️ **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)** - for styling the home page
 
-✔️ **[Leaflet](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)** - to render the interactive map
+✔️ **[Leaflet](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)** - for rendering the interactive map
 
-✔️ **[Sweat Alert](https://sweetalert2.github.io/)** to show alert messages on a beatiful modal
+✔️ **[Sweat Alert](https://sweetalert2.github.io/)** for showing alert messages on a beatiful modal
 
 > For more details on the projects dependencies like specific versions check out the [package.json file](https://github.com/JohnPetros/ip-address-tracker/blob/main/package.json)
 
@@ -82,8 +82,8 @@ Este projeto foi desenvolvido usando as seguintes tecnologias:
 ### 🔧 Prerequisitives
 
 
-- [Git](https://git-scm.com/) to manipulate Git repositories
-- [Python](https://www.python.org/) to install the dependencies and run the application (using [pip](https://www.w3schools.com/python/python_pip.asp))
+- [Git](https://git-scm.com/) for manipulating Git repositories
+- [Python](https://www.python.org/) for installing the dependencies and runnning the application (using [pip](https://www.w3schools.com/python/python_pip.asp))
 
 > Also it is good to have a code editor like [VSCode](https://code.visualstudio.com/)
 
