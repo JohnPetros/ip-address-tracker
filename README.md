@@ -57,7 +57,7 @@ This project is based on the [IP Address Tracker Challenge](https://www.frontend
 
 ## ⚙️ Archtecture
 
-## 🛠️ Technologies, tools and external services
+### 🛠️ Technologies, tools and external services
 
 This project was developed using the technologies bellow:
 
