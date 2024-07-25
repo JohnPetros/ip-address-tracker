@@ -82,8 +82,8 @@ This project was developed using the technologies bellow:
 ### 🔧 Prerequisitives
 
 
-- [Git](https://git-scm.com/) for manipulating Git repositories
-- [Python](https://www.python.org/) for installing the dependencies and runnning the application (using [pip](https://www.w3schools.com/python/python_pip.asp))
+- [Git](https://git-scm.com/) for manipulating Git repositories.
+- [Python](https://www.python.org/) for installing the dependencies and runnning the application (using [pip](https://www.w3schools.com/python/python_pip.asp)).
 
 > Also it is good to have a code editor like [VSCode](https://code.visualstudio.com/)
 
