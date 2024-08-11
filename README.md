@@ -87,7 +87,7 @@ This project was developed using the technologies bellow:
 
 > Also it is good to have a code editor like [VSCode](https://code.visualstudio.com/)
 
-### 📟 Rodando a aplicação
+### 📟 Running the application
 
 ```bash
 
